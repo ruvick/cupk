@@ -780,15 +780,27 @@ body.ie .ibg img {
     margin-left: auto;
     margin-right: 30px; }
   .header__container_r {
-    padding: 57px 0 0 0;
+    padding: 57px 30px;
     margin: 0px auto; }
-  .header__left-block {
-    width: 100%; }
+  
+  .header__left-block 
+  {
+    width: 100%; 
+    position: relative;
+  }
+
   .header__logo {
-    margin: 0px 48px 0px 0px;
+    flex: 1;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center; 
+    justify-content: start;
+  }
+
+  .menu__body {
+    flex:2;
+  }
+
   .header__logo-link {
     margin: 0px 10px 0px 0px; }
     .header__logo-link:before {
@@ -805,11 +817,12 @@ body.ie .ibg img {
     color: #002D38;
     display: block; }
   .header__right-block {
-    max-width: 933px;
     width: 100%;
+    
     height: 1003px;
     background: #002D38;
-    border-radius: 0 0 0 30px; }
+   }
+
   .header__contacts {
     margin: 0px 0px 130px 0px; }
   .header__adress {
@@ -834,8 +847,13 @@ body.ie .ibg img {
   font-weight: 600;
   color: #1A1818; }
 
+.menu__list {
+  justify-content: space-between; 
+}
+
 .menu__list li {
-  margin: 0px 42px 0px 0px; }
+  margin: 0px; 
+}
 
 .menu__list li:last-child {
   margin: 0px 0px 0px 0px; }
@@ -861,9 +879,8 @@ body.ie .ibg img {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMS42IiBoZWlnaHQ9IjE4IiB2aWV3Qm94PSIwIDAgMjEuNiAxOCI+DQogIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfMTYiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDE2IiBkPSJNLTczNS45OTMsNzIuMDlsLS4zNTcsNS4wMjVhMS4yNDksMS4yNDksMCwwLDAsMS0uNDgzbDIuNC0yLjI5LDQuOTY2LDMuNjM3Yy45MTEuNTA3LDEuNTUyLjI0LDEuOC0uODM4bDMuMjYtMTUuMjc1aDBjLjI4OS0xLjM0Ni0uNDg3LTEuODczLTEuMzc1LTEuNTQzbC0xOS4xNjEsNy4zMzZjLTEuMzA3LjUwOC0xLjI4NywxLjIzNy0uMjIyLDEuNTY3bDQuOSwxLjUyNCwxMS4zNzgtNy4xMmMuNTM2LS4zNTUsMS4wMjMtLjE1OC42MjIuMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDc0NC40NjggLTYwLjIyNikiIGZpbGw9IiNmZmYiLz4NCjwvc3ZnPg0K"); }
 
 .header__img {
-  position: relative;
-  border-radius: 0 10px 10px 0;
-  margin: 0px -150px 0px 0px;
+  position: absolute;
+  right: -5%;
   border-radius: 0 35px 35px 0;
   overflow: hidden; }
 
@@ -936,7 +953,8 @@ body.ie .ibg img {
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex; 
+}
 
 .title h2 {
   font-size: 40px;

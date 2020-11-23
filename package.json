@@ -1,0 +1,30 @@
+{
+  "name": "cupk",
+  "version": "1.0.1",
+  "description": "Лендинг центр юридической поддержки в Курске",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files *.css,*.html,css/**/*,js/**/*",
+    "startdst": "browser-sync start --server dst --no-notify --no-ui --cwd dst --files *.css,*.html,css/**/*,js/**/*",
+    "test": "editorconfig-checker",
+    "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dst --file-ext html",
+    "styles": "postcss src/style.css --use postcss-csso --no-map --output dst/style.css",
+    "imgcopy": "scp -r src/img dst/img",
+    "jscopy": "scp -r src/js dst/js",
+    "asestcopy": "scp -r src/assets dst/assets",
+    "sendercopy": "scp -r src/sender dst/sender",
+    "build": "npm run html && npm run styles && npm run imgcopy && npm run jscopy && npm run asestcopy && npm run sendercopy",
+    "deploy": "cd dst && scp -r * zaharoyl_all@zaharoyl.beget.tech:antikor46.ru/public_html/"
+  },
+  "keywords": [
+    "web",
+    "html"
+  ],
+  "author": "Asmi-Studio",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "editorconfig-checker": "^3.1.0",
+    "html-minifier": "*"
+  }
+}
