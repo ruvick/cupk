@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>ЦЮПК</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://api-maps.yandex.ru/2.0-stable/?apikey=7a3a75f6-e4a5-4384-a923-f9beac64bd52&load=package.standard&lang=ru-RU" type="text/javascript"></script>
+	<!-- Bootstrap добавил-->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+	<!-- Главный Файл CSS Стилей был-->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Фавикон был-->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- Bootstrap Адаптив был-->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<header id="header" class="header d-flex">
+
+	<div class="header__left-block ">
+		<div class="header__container header__container_l d-flex">
+
+			<div class="header__logo d-flex">
+				<a href="#" class="header__logo-link"></a>
+				<a href="#" class="header__logo-text">
+					ЦЕНТР ЮРИДИЧЕСКОЙ <br>
+					ПОДДЕРЖКИ В КУРСКЕ
+				</a>
+			</div>
+			<!-- Меню с иконкой бургера -->
+			<!-- <div class="header__menu menu">
+				<div class="menu__icon icon-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div> -->
+				<nav class="menu__body">
+					<ul class="menu__list d-flex">
+						<li><a href="#" class="menu__link">Услуги</a></li>
+						<li><a href="#" class="menu__link">Преимущества</a></li>
+						<li><a href="#" class="menu__link">Гарантии</a></li>
+						<li><a href="#" class="menu__link">Практика</a></li>
+						<li><a href="#" class="menu__link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__img">
+				<picture>
+					<img src="img/header-img.jpg" alt="">
+				</picture>
+			</div>
+		</div>
+
+		<div class="header__right-block">
+			<div class="header__container header__container_r">
+
+				<div class="header__contacts d-flex">
+					<div class="header__adress">
+						<p>305040, г.Курск, ул.Запольная, д.60, оф.17/2, 2 этаж</p>
+						<a href="mailto:Lisitsayulia@yandex.ru">eimail: Lisitsayulia@yandex.ru</a>
+					</div>
+					<div class="header__telephone d-flex">
+						<a href="#" class="link-whatsapp"></a>
+						<a href="#" class="link-telegram"></a>
+						<p><a href="tel:+78004445498" class="header__phone">8-800-444-54-98</a></p>
+					</div>
+				</div>
+
+				<div class="header-item">
+					<h1>
+						ЦЕНТР <br>
+						ЮРИДИЧЕСКОЙ <br>
+						ПОДДЕРЖКИ В КУРСКЕ <br>
+					</h1>
+					<p>
+						Мы расскажем вам, какие у вас есть права по закону <br>
+						и что делать. <br>
+						<span>Получите бесплатный анализ <br>
+						своей проблемы с учетом судебной практик.</span>
+					</p>
+					<form class="header__form" action="#">
+						<textarea name="" id="" placeholder="Ваш вопрос"></textarea>
+						<input type="text" autocomplete="off" placeholder="Имя" name="form[]" data-value="">
+						<input type="tel" autocomplete="off" placeholder="Телефон" name="form[]" data-value="">
+						<button type="submit" class="form__btn button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</header>  
+
+		<!-- Секция directions-->
+		<section id="directions" class="directions">
+			<div class="container">
+				<div class="directions__title title">
+					<h2>
+						Мы готовы предложить юридические <br>
+						услуги по следующим направлениям
+					</h2>
+				</div>
+
+				<div class="directions__column d-flex">
+
+					<div class="directions__card">
+						<h3>ЗАЩИТА ПРАВ ПОТРЕБИТЕЛЕЙ</h3>
+						<p>
+							Возврат денег, товара, замена товара, гарантия на
+							сезонные товары, качество товара, технически сложные 
+							товары, претензия продавцу, просрочка выполнения
+							требований потребителя, возмещение ущерба, штраф в
+							пользу потребителя, моральный вред.
+						</p>
+					</div>
+
+					<div class="directions__card">
+						<h3>ЗЕМЕЛЬНЫЕ СПОРЫ</h3>
+						<p>
+							Порядок предоставления земли, арендная плата за
+							землю, дачная амнистия, регистрация змели под
+							строительство, межевание земельных участков,
+							перевод земли в другую категорию, бесплатная
+							приватизация земли, права на змелю при продаже дома.
+							Снижение кадастровой стоимости земельных участков,
+							установление (утончение) границ земельных участков,
+							получение права ограниченного пользования чужим
+							земельным участком (сервитут).
+						</p>
+					</div>
+
+					<div class="directions__card">
+						<h3>СЕМЕЙНЫЕ ВОПРОСЫ</h3>
+						<p>
+							Расторжение брака, раздел имущества, алименты,
+							брачный договор, совместная собственность,
+							распоряжение имуществом.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="directions__column d-flex">
+
+					<div class="directions__card directions__card_img">
+						<img src="img/card-01.jpg" alt="">
+					</div>
+
+					<div class="directions__card">
+						<h3>ВОПРОСЫ ПО НЕДВИЖИМОСТИ</h3>
+						<p>
+							Заключение договора купли-продажи (дарения)
+							квартиры, регистрация перехода прав собственности,
+							какие нужны документы при регистрации, расторжение
+							договора, преимущественное право покупки доли,
+							признание сделки приватизации недействительной.
+						</p>
+					</div>
+
+					<div class="directions__card">
+						<h3>НАСЛЕДСТВЕННЫЕ ДЕЛА</h3>
+						<p>
+							Восставноление срока для принятия наследства,
+							наследственные споры, оспорить завещание на квартиру,
+							оформление наследства, признание завещания
+							недействительным, недостойные наследники, составление
+							завещания.
+						</p>
+					</div>
+
+				</div>
+
+				<div class="directions__column d-flex">
+
+					<div class="directions__card">
+						<h3>ЖИЛИЩНЫЕ ВОПРОСЫ</h3>
+						<p>
+							Право собственности, купля-продажа жилья, долевое
+							участие в строительстве жилья, выселение, вселение,
+							наем, аварийное, ветхое жилье, обеспечение жильем, 
+							перевод помещений в жилые (нежилые),
+							перепланировка, переустройство.
+						</p>
+					</div>
+
+					<div class="directions__card">
+						<h3>АРБИТРАЖНЫЕ ДЕЛА</h3>
+						<p>
+							Взыскать задолженность, по договору поставки, аренды,
+							перевозки, расторгнуть договор аренды, поставки.
+							Обжалование действий, решений государственных 
+							органов.
+						</p>
+					</div>
+
+					<div class="directions__card">
+						<h3>ТРУДОВЫЕ ОТНОШЕНИЯ</h3>
+						<p>
+							Заключение трудового договора, перевод на другую
+							работу или должность, изменение или прекращение 
+							трудового договора, задолженность по зарплате, 
+							больничный, права беременных, увольнение, компенсации,
+							командировки, пособие по безработице.
+						</p>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Секция Steps-->
+	<section id="steps" class="steps">
+		<div class="container">
+			<div class="steps__title title">
+				<h2>Четыре простых шага получить нашу услугу</h2>
+			</div>
+
+			<div class="steps__wrap">
+
+				<div class="steps__wrap-column d-flex">
+
+					<div class="steps__column">
+						<div class="steps__card-wrap d-flex">
+							<div class="card-left d-flex">1</div>
+							<div class="card-right d-flex"><p>Отправить <br> заявку <br> на консульацию</p></div>
+						</div>
+
+						<div class="steps__card-wrap d-flex">
+							<div class="card-left d-flex">2</div>
+							<div class="card-right d-flex"><p>Кратко описать <br> ситуацию <br> нашему юристу</p></div>
+						</div>
+					</div>
+
+					<div class="steps__column">
+						<div class="steps__card-wrap d-flex">
+							<div class="card-right card-right-right d-flex"><p>Прийти в офис <br> на бесплатный<br>прием</p></div>
+							<div class="card-left card-left-left d-flex">3</div>
+						</div>
+
+						<div class="steps__card-wrap d-flex">
+							<div class="card-right card-right-right d-flex"><p>Заключить <br> догорв на <br> оказание услуг</p></div>
+							<div class="card-left card-left-left d-flex">4</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<a href="#" class="steps__btn button">Отправить заявку</a>
+			
+		</div>
+	</section>
+
+	<!-- Секция -->
+	<section id="advant" class="advant">
+		<div class="container">
+
+			<div class="advant__title title">
+				<h2>Наши преимущества</h2>
+			</div>
+
+			<div class="advant__row d-flex">
+
+				<div class="advant__card">
+					<h3>
+						КАЧЕСТВЕННЫЕ <br>
+						ЮРИДИЧЕСКИЕ УСЛУГИ
+					</h3>
+					<p>
+						Продолжительный и успешный
+						опыт юридической работы и
+						правовой деятельности сотрудников
+						нашего центра.
+					</p>
+				</div>
+
+				<div class="advant__card advant__card-card">
+					<h3>
+						СОЧУВСТВИЕ
+					</h3>
+					<p>
+						Наше сотрудничество отличается
+						тем, что оно происходит в
+						атмосфере заботы, понимания и
+						беспокойства за Ваше дело. Мы
+						понимаем, через что Вы проходите и
+						наша цель помочь Вам найти верный
+						способ в разрешении проблем, с
+						которыми Вы столкнулись.
+					</p>
+				</div>
+
+				<div class="advant__card">
+					<h3>
+						ЦЕНЫ ПОДОЙДУТ <br>
+						КАЖДОМУ
+					</h3>
+					<p>
+						Разумные цены на юридические
+						услуги, позволяющие
+						минимизировать расходы и
+						возместить затраты Клиента в суде.
+					</p>
+				</div>
+
+				<div class="advant__card advant__card-card">
+					<h3>
+						УДОБСТВО <br>
+						И СЕРВИС
+					</h3>
+					<p>
+						Офис расположен в шаговой
+						доступности от остановок
+						общественного транспорта, рядом
+						имеются паркинги для ваших
+						автомобилей.
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- Секция -->
+<section id="warrant" class="warrant">
+	<div class="container">
+
+		<div class="warrant__title title">
+			<h2>Мы гарантируем</h2>
+		</div>
+
+		<div class="warrant__row d-flex">
+
+			<div class="warrant__column d-flex">
+				<div class="steps__card-wrap d-flex">
+					<div class="card-left card-icon-1 d-flex"></div>
+					<div class="card-right d-flex"><p>Доступность</p></div>
+				</div>
+
+				<div class="steps__card-wrap d-flex">
+					<div class="card-left card-icon-2 d-flex"></div>
+					<div class="card-right d-flex"><p>Конфиденциальность</p></div>
+				</div>
+			</div>
+
+			<div class="warrant__column d-flex">
+				<div class="steps__card-wrap d-flex">
+					<div class="card-left card-icon-3 d-flex"></div>
+					<div class="card-right d-flex"><p>Оперативность</p></div>
+				</div>
+
+				<div class="steps__card-wrap d-flex">
+					<div class="card-left card-icon-4 d-flex"></div>
+					<div class="card-right d-flex"><p>Комплексное <br> обслуживание</p></div>
+				</div>
+			</div>
+
+			<div class="warrant__column-img">
+				<img src="img/card-02.jpg" alt="">
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<section id="basics" class="basics">
+	<div class="container">
+		<div class="basics__wrap d-flex">
+			<div class="basics__wrap-img">
+				<img src="img/btm.jpg" alt="">
+			</div>
+			<div class="basics__title title">
+				<h2>
+					Основы практики и направления <br>
+					деятельности юридического центра
+				</h2>
+				<p>
+					В настоящем разделе представленна на обозрение небольшая часть судебных актов по результатам судебных разбирательств в
+					арбитражных судах, судах общей юрисдикции (мировых судей), в которых интересы Клиентов (физичексих и юридических лиц)
+					представляли юристы нашего центра, а так же реальные образцы процессуальных и иных правовых документов, которые были
+					разработаны юристами нашего центра. Даже с учетом ограничений, предусмотренных законодательством и пожеланиями Клиентов, мы
+					искренне надеемся, что представленных документов будет достаточно для определения высокого профессионального уровня
+					специалистов нашего центра, а так же для демонстрации профессионального, ответственного и добросовестного, индивидуального
+					подхода к разработке любого правового документа, максимально учитывающего интересы Клиента.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer id="footer" class="footer d-flex">
+	<!-- <div class='footer__container'> -->
+
+		<div class="footer__row d-flex">
+
+			<div class="footer__contact-title title">
+				<h2>Контакты</h2>
+				<p>
+					305040, г.Курск, <br>
+					ул.Запольная, д.60, оф.17/2, 2 этаж.
+				</p>
+				<p>
+					Т.<a href="tel:+79611957588">8961-195-75-88</a> <br>
+					e-mail:<a href="mailto:Lisitsayulia@yandex.ru"> Lisitsayulia@yandex.ru</a>
+				</p>
+				<a href="#" class="footer__btn button">Заказать звонок</a>
+			</div>
+
+			<div id="map" class="footer__map">
+			</div>
+
+		</div>
+
+		<!-- </div> -->
+	</footer>
+</div>
+<div class="popup">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup__title"></div>
+				<div class="popup__txt"></div>
+				<form action="#" class="popup-form form">
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input" />
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req email" />
+					</div>
+					<div class="form-input">
+						<input autocomplete="off" type="text" name="form[]" data-value="" class="input req" />
+					</div>
+					<div class="form-button">
+						<button type="submit" class="form__btn btn fw"></button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="popup popup-video">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-close"></div>
+			<div class="popup-video__value video"></div>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
+<script src="js/vendors.js"></script>
+<script src="js/main.js"></script>
+<script src="js/custom.js" ></script>
+
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script> -->
+</body>
+</html>
