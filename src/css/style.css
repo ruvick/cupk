@@ -958,11 +958,16 @@ body.ie .ibg img {
   display: flex; 
 }
 
-.title h2 {
+ h2 {
   font-size: 40px;
   line-height: 45px;
   font-weight: 900;
   text-align: center; }
+/*.title h2 {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 900;
+  text-align: center; }*/
 
 .button {
   font-size: 19.23px;
@@ -982,7 +987,7 @@ body.ie .ibg img {
   background-position: center;
   background-repeat: no-repeat; }
 
-.directions__title {
+.directions h2{
   margin: 0px 0px 73px 0px; }
 
 .directions__column {
@@ -1019,7 +1024,7 @@ body.ie .ibg img {
 .steps {
   padding: 53px	0 75px 0; }
 
-.steps__title {
+.steps h2 {
   margin: 0px 0px 72px 0px; }
 
 .steps__wrap {
@@ -1125,7 +1130,7 @@ body.ie .ibg img {
 .advant {
   padding: 68px 0 102px 0;
   background: #EDEEEF; }
-  .advant__title {
+  .advant h2 {
     margin: 0px 0px 79px 0px; }
   .advant__card {
     max-width: 360px;
@@ -1161,7 +1166,7 @@ body.ie .ibg img {
 .warrant {
   padding: 60px 0 121px 0; }
 
-.warrant__title h2 {
+.warrant h2 {
   margin: 0px 0px 63px 0px;
   text-align: left; }
 
