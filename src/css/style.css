@@ -1413,9 +1413,36 @@ body.ie .ibg img {
     .header__contacts {
       margin: 0px 0px 75px 0px;
     }
+.steps__wrap {
+    background: none;
+    height: auto;
+  }
+  .advant__row {
+    flex-wrap: wrap;
+    width: 98%;
+    justify-content: center;
+  }
+  .advant__card {
+    margin: 0 20px 20px 0;
+  }
+    .advant__card:nth-child(2) {
+    margin-right: 0;
+  }
+  .advant__card:nth-child(3) {
+    margin-right: 0;
+  }
+  .warrant__column-img {
+    display: none;
+  }
+  .advant__card-card_r{
+    order: 1;
+  }
+    .advant__card-card_l{
+    order: 2;
+  }
   }
 
-  @media (max-width: 960px) {
+/*  @media (max-width: 960px) {
     .header {
     flex-wrap: wrap;
   }
@@ -1431,4 +1458,4 @@ body.ie .ibg img {
   .header__contacts {
     max-width: 100%;
   }
-}
+}*/
