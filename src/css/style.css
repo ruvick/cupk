@@ -32,7 +32,7 @@
   src: url("../fonts/Lato-Semibold.eot");
   src: local("☺"), url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.ttf") format("truetype"), url("../fonts/Lato-Semibold.svg") format("svg");
   font-weight: 600;
-  font-style: normal; }
+  font-style: normal; } 
 
 * {
   padding: 0px;
@@ -906,6 +906,9 @@ body.ie .ibg img {
     font-weight: 600;
     color: #fff;
     margin: 0px 0px 65px 0px; }
+.header-item span {
+  color: #FE9D2B;
+}
 
 .header__form input, textarea {
   max-width: 272px;
