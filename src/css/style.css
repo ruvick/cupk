@@ -1442,7 +1442,7 @@ body.ie .ibg img {
   }
   }
 
-/*  @media (max-width: 960px) {
+  @media (max-width: 960px) {
     .header {
     flex-wrap: wrap;
   }
@@ -1458,4 +1458,115 @@ body.ie .ibg img {
   .header__contacts {
     max-width: 100%;
   }
+  .header__logo-text {
+    display: block;
+  }
+  .menu__list {
+    justify-content: space-evenly;
+  }
+  .header__container_l {
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  .header__contacts {
+    margin-bottom: 35px;
+  }
+  .header-item {
+    margin: 0;
+    max-width: 100%;
+  }
+  .header__container_r {
+    max-width: 100%;
+    padding: 20px 10px 55px 10px;
+    margin: 0;
+  }
+  .header-item h1 br {
+    display: none;
+  }
+  .header-item p br {
+    display: none;
+  }
+  .header__right-block {
+    height: auto;
+  }
+  .steps__wrap-column {
+    justify-content: center;
+}
+}
+  @media (max-width: 812px) {
+.directions__column {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+  .directions__card {
+    width: 100%;
+    margin: 0 0 2% 0;
+}
+.warrant {
+    padding: 60px 0;
+}
+.warrant__column {
+    height: auto;
+}
+.warrant__column .card-right {
+    margin: 0;
+}
+.warrant__column .card-right p {
+    margin: 0px 0px 0px 135px;
+}
+.warrant__column .steps__card-wrap {
+    margin-bottom: 10px;
+}
+.steps__wrap-column {
+    flex-wrap: wrap;
+    height: auto;
+}
+.basics__wrap {
+    flex-direction: column;
+}
+.basics__wrap-img {
+    margin: 0 0 30px 0;
+}
+.basics__title h2 {
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.footer__row {
+    padding: 0 0 0 30px;
+    flex-direction: column-reverse;
+    padding: 0;
+}
+.footer__contact-title {
+    margin: 0 auto;
+}
+.footer {
+  padding: 0 10px 30px 10px;
+}
+.footer__row {
+    flex-direction: column-reverse;
+    padding: 0;
+}
+.footer__contact-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    max-width: 100%;
+}
+.footer__contact-title h2 {
+    text-align: left;
+    margin: 0px 0px 42px 0px;
+}
+/*.footer__map, .footer__row {
+    height: auto;
 }*/
+.footer__btn {
+    margin: 0px;
+}
+}
+  @media (max-width: 768px) {
+    .advant__card {
+    margin: 0 0 20px 0;
+}
+  }
