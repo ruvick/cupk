@@ -1020,7 +1020,7 @@ body.ie .ibg img {
     line-height: 18px;
     font-weight: 900;
     color: #006D76;
-    margin: 0px 0px 35px 0px; }
+    margin: 0px 0px 35px 0px; line-height: 1.2; }
   .directions__card_img {
     padding: 0;
     overflow: hidden;
@@ -1342,7 +1342,7 @@ body.ie .ibg img {
     margin-left: 10px;
   }
   .footer__row {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 30px;
   }
  }
   @media (max-width: 1330px) {
@@ -1350,38 +1350,71 @@ body.ie .ibg img {
         margin-left: 10px; 
     }
     .directions__card {
-    margin-right: 20px;
+    width:32%;
+    margin-right: 2%;
 }
     .directions__card:last-child {
     margin-right: 0px;
 }
+
+  .header__contacts {
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .header__telephone {
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .header__container_r {
+    padding: 35px 20px 0 75px;
+  }
+
+  .header__logo {
+    margin: auto 15px;
+  }
+
+  .warrant__column .card-right {
+    margin-right: 20px;
+  }
 }
   @media (max-width: 1280px) {
-    .header-item {
-    margin-left: 50px;
-  }
+
   .header__phone {
     font-size: 24px;
   }
 }
   @media (max-width: 1100px) {
-  .header__contacts {
-    flex-wrap: wrap;
+    .header__contacts {
+      flex-wrap: wrap;
+    }
+    .header__adress {
+      margin-bottom: 5px;
+    }
+    .warrant__row {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    .warrant__column-img {
+      margin-top: 30px;
+    }
+    .warrant h2 {
+      text-align: center;
+    }
+    .header__logo-text {
+      display: none;
+    }
+
+    .menu__body {
+      flex: 5;
+    }
+
+    .header__contacts {
+      margin: 0px 0px 75px 0px;
+    }
   }
-  .header__adress {
-    margin-bottom: 5px;
-  }
-  .warrant__row {
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .warrant__column-img {
-    margin-top: 30px;
-  }
-  .warrant h2 {
-    text-align: center;
-  }
-}
+
   @media (max-width: 960px) {
     .header {
     flex-wrap: wrap;
