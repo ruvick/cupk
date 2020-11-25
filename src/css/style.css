@@ -874,9 +874,9 @@ body.ie .ibg img {
   padding: 25px 20px 35px 20px;
   margin-top: 105px;
   overflow: auto;
-  -webkit-transition: all 0.55s;
+/*  -webkit-transition: all 0.55s;
   -o-transition: all 0.55s;
-  transition: all 0.55s;
+  transition: all 0.55s;*/
    }
 
 .show-menu .menu__list {
