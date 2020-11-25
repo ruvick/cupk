@@ -17,4 +17,9 @@ icons.forEach (icon => {
   });
 });
 
-  
+$(function () {
+  $('.nav-icon-5').click(function () {
+    $('.menu__body').toggleClass('show-menu')
+    $('body').toggleClass('lock')
+  })  
+});
