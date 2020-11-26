@@ -40,3 +40,4 @@
         $('body,html').animate({scrollTop: top}, 1500);
     });
 });
+
