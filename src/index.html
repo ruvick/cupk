@@ -10,20 +10,50 @@
 	<!-- Главный Файл CSS Стилей был-->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Фавикон был-->
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<!-- Bootstrap Адаптив был-->
+	<link rel="icon" type="img/fav/icon-256.png" sizes="256x256" href="#">
+	<link rel="icon" type="img/fav/icon-128.png" sizes="128x128" href="#">
+	<link rel="icon" type="img/fav/icon-64.png" sizes="64x64" href="#">
+	<link rel="icon" type="img/fav/icon-32.png" sizes="32x32" href="#">
+	<link rel="icon" type="img/fav/icon-16.png" sizes="16x16" href="#">
+	<link rel="icon" type="img/fav/icon.svg" sizes="any" href="#">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body id="body">
 	<div class="wrapper">
-		<header id="header" class="header d-flex">
+
+		<div id="popup-2" class="popup-2">
+			<a href="#steps" class="popup__area-2"></a>
+			<div class="popup__body-2">
+				<div class="popup__content-2">
+					<a href="#steps" class="popup__close-2">X</a>
+					<div class="popup__img">
+						<img src="img/popup-img.jpg" alt="">
+					</div>
+					<div class="popup__block">
+						<div class="popup__title"><h2>Заявка на бесплатную консультацию</h2></div>
+						<div class="popup__text"></div>
+						<form class="header__form d-flex" action="#">
+							<div class="header__form-r">
+								<textarea name="" id="" placeholder="Ваш вопрос"></textarea>
+							</div>
+							<div class="header__form-l">
+								<input type="text" autocomplete="off" placeholder="Имя" name="form[]" data-value="">
+								<input type="tel" autocomplete="off" placeholder="Телефон" name="form[]" data-value="">
+								<button type="submit" class="form__btn button">Отправить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header id="header" class="header lock-padding d-flex">
 
 			<div class="header__left-block ">
-				<div class="header__container header__container_l d-flex"> 
+				<div class="header__container header__container_l d-flex">  
 
-					<div class="header__logo d-flex">
+					<div class="header__logo d-flex"> 
 						<a href="#" class="header__logo-link"></a>
 						<a href="#" class="header__logo-text">
 							ЦЕНТР ЮРИДИЧЕСКОЙ <br>
@@ -38,11 +68,11 @@
 					</div>
 					<nav class="menu__body">
 						<ul class="menu__list d-flex">
-							<li><a href="#" class="menu__link">Услуги</a></li>
-							<li><a href="#" class="menu__link">Преимущества</a></li>
-							<li><a href="#" class="menu__link">Гарантии</a></li>
-							<li><a href="#" class="menu__link">Практика</a></li>
-							<li><a href="#" class="menu__link">Контакты</a></li>
+							<li><a href="#directions" class="menu__link">Услуги</a></li>
+							<li><a href="#advant" class="menu__link">Преимущества</a></li>
+							<li><a href="#warrant" class="menu__link">Гарантии</a></li>
+							<li><a href="#basics" class="menu__link">Практика</a></li>
+							<li><a href="#footer" class="menu__link">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -64,7 +94,7 @@
 						<div class="header__telephone d-flex">
 							<a href="#" class="link-whatsapp"></a>
 							<a href="#" class="link-telegram"></a>
-							<p><a href="tel:+78004445498" class="header__phone">8-800-444-54-98</a></p>
+							<p><a href="tel:+79611957588" class="header__phone">+7961-195-75-88</a></p>
 						</div>
 					</div>
 
@@ -246,7 +276,7 @@
 				</div>
 
 			</div>
-			<a href="#" class="steps__btn button">Отправить заявку</a>
+			<a href="#popup-2" class="steps__btn button popup-link">Отправить заявку</a>
 			
 		</div>
 	</section>
@@ -400,10 +430,10 @@
 					ул.Запольная, д.60, оф.17/2, 2 этаж.
 				</p>
 				<p>
-					Т.<a href="tel:+79611957588">8961-195-75-88</a> <br>
-					e-mail:<a href="mailto:Lisitsayulia@yandex.ru"> Lisitsayulia@yandex.ru</a>
+					тел.: <a href="tel:+79611957588">+7961-195-75-88</a> <br>
+					e-mail: <a href="mailto:Lisitsayulia@yandex.ru">Lisitsayulia@yandex.ru</a>
 				</p>
-				<a href="#" class="footer__btn button">Заказать звонок</a>
+				<a href="#popup-2" class="footer__btn button button popup-link">Заказать звонок</a>
 			</div>
 
 			<div id="map" class="footer__map">
