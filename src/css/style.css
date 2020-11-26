@@ -1793,6 +1793,28 @@ body.ie .ibg img {
 }
   }
     @media (max-width: 414px) {
+      .popup__title h2 {
+        font-size: 24px;
+        line-height: 1.2;
+        
+      }
+
+      .popup__title {
+        margin-bottom: 30px;
+      }
+
+      .popup__content-2 {
+        padding-top: 35px;
+      }
+
+      .popup__close-2 { 
+        top: 8px;
+      }
+
+      .popup__img {
+        height: 175px;
+    }
+
   .nav-icon-5{
   bottom: 13px;
   }
