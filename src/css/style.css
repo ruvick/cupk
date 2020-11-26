@@ -1282,6 +1282,10 @@ body.ie .ibg img {
   background-repeat: no-repeat;
   background-size: 83%;
   background-position: 50% 50%; }
+.warrant__column-img {
+  border-radius: 25px;
+  overflow: hidden;
+}
 .warrant__column-img img{
   width: 100%;
 }
@@ -1744,6 +1748,8 @@ body.ie .ibg img {
   @media (max-width: 768px) {
     .directions__card {
     min-height: 100%;
+    max-width: 95%;
+    margin-bottom: 3%;
   }
   .directions__card_img {
     display: none;
@@ -1754,6 +1760,9 @@ body.ie .ibg img {
     .advant__card {
     margin: 0 0 20px 0;
 }
+  .header__right-block {
+    background: url(../img/mobile-phone.jpg);
+  }
   }
     @media (max-width: 600px) {
     .header__container_l {
