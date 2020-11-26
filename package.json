@@ -8,13 +8,14 @@
     "startdst": "browser-sync start --server dst --no-notify --no-ui --cwd dst --files *.css,*.html,css/**/*,js/**/*",
     "test": "editorconfig-checker",
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dst --file-ext html",
-    "styles": "postcss src/style.css --use postcss-csso --no-map --output dst/style.css",
+    "styles": "postcss src/css/style.css --use postcss-csso --no-map --output dst/css/style.css",
     "imgcopy": "scp -r src/img dst/img",
     "jscopy": "scp -r src/js dst/js",
     "asestcopy": "scp -r src/assets dst/assets",
+    "fontscopy": "scp -r src/fonts dst/fonts",
     "sendercopy": "scp -r src/sender dst/sender",
-    "build": "npm run html && npm run styles && npm run imgcopy && npm run jscopy && npm run asestcopy && npm run sendercopy",
-    "deploy": "cd dst && scp -r * zaharoyl_all@zaharoyl.beget.tech:antikor46.ru/public_html/"
+    "build": "npm run html && npm run styles && npm run imgcopy && npm run jscopy && npm run fontscopy && npm run sendercopy",
+    "deploy": "cd dst && scp -r * jullisvh_all@jullisvh.beget.tech:ur-center46.ru/public_html/"
   },
   "keywords": [
     "web",
