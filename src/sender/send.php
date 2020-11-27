@@ -12,7 +12,7 @@ if((isset($_POST['phone'])&&$_POST['phone']!="")){
                     <body>
                         <p>Имя: '.$_POST['name'].'</p>
                         <p>Телефон: '.$_POST['phone'].'</p> 
-                        <p>e-mail: '.$_POST['mail'].'</p>                   
+                        <p>Вопрос: '.$_POST['mail'].'</p>                   
                     </body>
                 </html>'; 
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; 
