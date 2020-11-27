@@ -1112,6 +1112,10 @@ body.ie .ibg img {
     padding: 0;
     overflow: hidden;
     border: none; }
+  .directions__card p {
+    font-size: 18px;
+    line-height: 20px;
+}
 
 .steps {
   padding: 53px	0 75px 0; }
