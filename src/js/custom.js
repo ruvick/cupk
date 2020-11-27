@@ -22,7 +22,7 @@ function init () {
                     // Размеры иконки
                     iconImageSize: [70, 70],
                     // Смещение верхнего угла относительно основания иконки
-                    iconImageOffset: [-35, -35]
+                    iconImageOffset: [-25, -110]
     });
                 
     var clusterer = new ymaps.Clusterer({
