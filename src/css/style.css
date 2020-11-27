@@ -1391,9 +1391,10 @@ body.ie .ibg img {
   display: none;
 }
 
-.ymaps-copyrights-pane {
+.ymaps-copyrights-pane, .ymaps-2-1-77-map-copyrights-promo {
   display: none !important;
 }
+
 
 /*popup*/
 .popup-2 {
@@ -1738,9 +1739,9 @@ body.ie .ibg img {
     overflow: visible;
     margin-bottom: 30px;
 }
-  ymaps {
+/*  ymaps {
     height: 260px!important;
-  }
+  }*/
 .footer__btn {
     margin: 0px;
 }

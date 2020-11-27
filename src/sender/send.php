@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *"); 
 
 if((isset($_POST['phone'])&&$_POST['phone']!="")){
-        $to = 'asmi046@gmail.com,office@aprofi46.ru'; 
+        $to = 'asmi046@gmail.com,rudikov-web@ya'; 
         $subject = 'Обращение с сайта autopodbor46.ru';
         $message = '
                 <html>

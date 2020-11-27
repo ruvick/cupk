@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<title>ЦЮПК</title>
+	<title>ЦЕНТР ЮРИДИЧЕСКОЙ ПОДДЕРЖКИ В КУРСКЕ</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Юридические услуги в курске: защита прав потребителей, земельные споры, арбитражные дела, трудовые отношения, семейные вопросы. Не дорого, Звоните.">
 	<script src="https://api-maps.yandex.ru/2.0-stable/?apikey=7a3a75f6-e4a5-4384-a923-f9beac64bd52&load=package.standard&lang=ru-RU" type="text/javascript"></script>
-	<!-- Bootstrap добавил-->
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
-	<!-- Главный Файл CSS Стилей был-->
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<link rel="stylesheet" href="css/style.css">
-	<!-- Фавикон был-->
 	<link rel="icon" type="image/png" href="img/fav/icon-256.png" sizes="256x256" href="#">
 	<link rel="icon" type="image/png" href="img/fav/icon-128.png" sizes="128x128" href="#">
 	<link rel="icon" type="image/png" href="img/fav/icon-64.png" sizes="64x64" href="#">
@@ -110,10 +108,10 @@
 							<span>Получите бесплатный анализ <br>
 							своей проблемы с учетом судебной практик.</span>
 						</p>
-						<form class="header__form" action="#">
-							<textarea name="" id="" placeholder="Ваш вопрос"></textarea>
-							<input type="text" autocomplete="off" placeholder="Имя" name="form[]" data-value="">
-							<input type="tel" autocomplete="off" placeholder="Телефон" name="form[]" data-value="">
+						<form action="sender/send.php" method="POST" class="header__form">
+							<textarea placeholder="Ваш вопрос" name="text"></textarea>
+							<input type="text" autocomplete="off" placeholder="Имя" name="name">
+							<input type="tel" autocomplete="off" placeholder="Телефон" name="tel">
 							<button type="submit" class="form__btn button">Отправить</button>
 						</form>
 					</div>

@@ -1,12 +1,41 @@
-    ymaps.ready(init);
-    var myMap;
+ymaps.ready(init);
 
-    function init(){     
-      var map = new ymaps.Map ("map", {
-        center: [51.741304, 36.149528], 
-        zoom: 17
-      });
-    }
+function init () {
+    var myMap = new ymaps.Map("map", {
+        // Координаты центра карты
+        center:[51.741304, 36.149528],
+        // Масштаб карты
+        zoom: 17,
+        // Выключаем все управление картой
+        controls: []
+    }); 
+            
+    var myGeoObjects = [];
+    
+    // Указываем координаты метки
+    myGeoObjects = new ymaps.Placemark([51.741304, 36.149528],{
+                    balloonContentBody: '\'ЦЕНТР ЮРИДИЧЕСКОЙ ПОДДЕРЖКИ В КУРСКЕ\'',
+                    },{
+                    iconLayout: 'default#image',
+                    // Путь до нашей картинки
+                    iconImageHref: 'img/icon/mappointer.svg', 
+                    // Размеры иконки
+                    iconImageSize: [70, 70],
+                    // Смещение верхнего угла относительно основания иконки
+                    iconImageOffset: [-35, -35]
+    });
+                
+    var clusterer = new ymaps.Clusterer({
+        clusterDisableClickZoom: false,
+        clusterOpenBalloonOnClick: false,
+    });
+    
+    clusterer.add(myGeoObjects);
+    myMap.geoObjects.add(clusterer);
+    // Отключим zoom
+    myMap.behaviors.disable('scrollZoom');
+
+}
 
 
 
@@ -41,3 +70,39 @@
     });
 });
 
+
+
+jQuery('.header__form button').click(function(e){ 
+        e.preventDefault();
+        
+        let persPhone = jQuery('.header__form input[name=tel]').val(); 
+        if ((persPhone == "")||(persPhone.indexOf("_")>0)) {
+            alert("Заполните поле телефон!");
+            return;
+        }
+        
+        var  jqXHR = jQuery.post(
+          "../sender/send.php",
+            {
+                phone: jQuery('.header__form input[name=tel]').val(),    
+                name: jQuery('.header__form input[name=name]').val(),
+                mail: jQuery('.header__form input[name=text]').val(),
+            }
+            
+        );
+        
+        
+        jqXHR.done(function (responce) {
+            console.log(responce);
+            document.location.href = "../thank-you.html"; 
+            jQuery('.header__form input[name=tel]').val("");  
+            jQuery('.header__form input[name=name]').val("");
+            jQuery('.header__form input[name=text]').val("");
+        });
+        
+        jqXHR.fail(function (responce) {
+            console.log(responce);
+            alert("Произошла ошибка попробуйте позднее!");
+        });
+ 
+    });
